@@ -2,11 +2,10 @@ name = "muppet-inspector"
 main = "dist-server/index.js"
 compatibility_date = "2024-09-23"
 compatibility_flags = ["nodejs_compat"]
-[assets]
-directory = "dist"
 
-[durable_objects]
-bindings = [{ name = "Inspector", class_name = "MuppetInspector" }]
+[[durable_objects.bindings]]
+name = "Inspector"
+class_name = "MuppetInspector"
 
 [[migrations]]
 tag = "v1"
