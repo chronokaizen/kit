@@ -20,12 +20,15 @@ export default defineConfig(({ mode }) => {
           "@/client": path.resolve(__dirname, "./src/client"),
         },
       },
+      optimizeDeps: {
+        include: ["@muppet-kit/shared"],
+      },
     };
 
   return {
     ssr: {
       external: ["react", "react-dom"],
-      noExternal: ["@muppet-kit/shared"],
+      noExternal: true,
     },
     environments: {
       ssr: {
