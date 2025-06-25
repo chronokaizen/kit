@@ -21,6 +21,9 @@ export default defineConfig(({ mode }) => {
           "@muppet-kit/shared": path.resolve(__dirname, "../shared/src"),
         },
       },
+      build: {
+        cssMinify: false,
+      },
     };
 
   return {

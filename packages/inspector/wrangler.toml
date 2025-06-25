@@ -1,6 +1,7 @@
 name = "muppet-inspector"
 main = "dist-server/index.js"
 compatibility_date = "2024-03-20"
+assets = "dist"
 
 [[durable_objects.bindings]]
 name = "Inspector"
