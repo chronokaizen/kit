@@ -21,4 +21,4 @@ class_name = "MuppetInspector"
 # Required for using Durable Objects on the free plan.
 [[migrations]]
 tag = "v1"
-new_classes = ["MuppetInspector"]
+new_sqlite_classes = ["MuppetInspector"]
