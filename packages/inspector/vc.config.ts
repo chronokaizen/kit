@@ -22,6 +22,7 @@ export default defineConfig(({ mode }) => {
       },
       optimizeDeps: {
         include: ["@muppet-kit/shared"],
+        exclude: ["lucide-react"],
       },
     };
 
