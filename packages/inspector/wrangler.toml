@@ -1,0 +1,11 @@
+name = "muppet-inspector"
+main = "dist-server/index.js"
+compatibility_date = "2024-03-20"
+
+[[durable_objects.bindings]]
+name = "Inspector"
+class_name = "MuppetInspector"
+
+[[migrations]]
+tag = "v1"
+new_classes = ["MuppetInspector"]
