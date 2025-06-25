@@ -18,11 +18,8 @@ export default defineConfig(({ mode }) => {
         alias: {
           "@": path.resolve(__dirname, "./src"),
           "@/client": path.resolve(__dirname, "./src/client"),
+          "@muppet-kit/shared": path.resolve(__dirname, "../shared/src"),
         },
-      },
-      optimizeDeps: {
-        include: ["@muppet-kit/shared"],
-        exclude: ["lucide-react"],
       },
     };
 
