@@ -20,6 +20,9 @@ export default defineConfig(({ mode }) => {
           "@/client": path.resolve(__dirname, "./src/client"),
         },
       },
+      ssr: {
+        noExternal: true,
+      },
     };
 
   return {
